@@ -1,22 +1,114 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap');
+
+html, body {
+  background-color: #222222;
+  margin: 0;
+  font-family: 'Open Sans Condensed', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 9px;
+  line-height: 1px;
 }
 
-.App-logo {
-  height: 40vmin;
+.code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.parent {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  top: 0;
+  left: 0;
+}
+
+.topnav {
+  background-color: #34A5DA;
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+li {
+  list-style-type: none;
+  font-weight: 700;
+  line-height: 3.1em;
+  font-size: 22px;
+  color: rgb(36, 36, 36);
+}
+
+.list {
+  list-style-type: none;
+  font-weight: 200;
+  color: rgb(36, 36, 36);
+  font-size: 22px;
+  line-height: 50px;
+}
+
+.midwhitespacearea {
+  height: 700px;
+  width: 100%;
+}
+
+.whitebox {
+  height: 450px;
+  width: 700px;
+  background-color: white;
+
+  /* center a box inside anothe div */
+  position: fixed; /* or absolute */
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+
+}
+
+.botnav {
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  /* center a box inside anothe div */
+  position: fixed; /* or absolute */
+  top: 85%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.buttonnavbg {
+  background-color: #222222;
+  text-align: center;
+  display: flexbox;
+}
+
+.buttonnavbgfont {
   color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+.buttons {
+  background: #34A5DA;
+  border-radius: 12px;
+  font-weight: 800;
+  font-size: 15px;
+  color: white;
+  padding: 5px 25px;
+  margin: 11px;
+  border: 0;
+}
+
+h1 {
+  text-align: right;
+  padding-right: 15px;
+}
+
+b {
+  font-weight: 600;
+}
+
+u {
+  text-decoration-line: underline;
+  text-decoration-color: #34A5DA;
+  font-weight: 800;
 }
